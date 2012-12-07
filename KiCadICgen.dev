@@ -157,9 +157,9 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit8]
-FileName=KiCadlibOp.cpp
+FileName=KiCadlibOp.h
 CompileCpp=1
-Folder=
+Folder=KiCadICgen
 Compile=1
 Link=1
 Priority=1000
@@ -167,9 +167,9 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit9]
-FileName=KiCadlibOp.h
+FileName=KiCadlibOp.cpp
 CompileCpp=1
-Folder=
+Folder=KiCadICgen
 Compile=1
 Link=1
 Priority=1000

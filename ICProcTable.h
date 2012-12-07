@@ -1,4 +1,13 @@
 
+/*
+  Name: KiCadICgen - Processing the Tables
+  Copyright: 2012 Stefan Helmert
+  Author: Stefan Helmert
+  Date: 07.12.12 18:07
+  Description: reads table-entries in structures
+*/
+
+
 #ifndef ICPROCTABLE_H
 #define ICPROCTABLE_H
 #include <iostream>

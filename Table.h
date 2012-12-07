@@ -5,6 +5,13 @@
  *
  * loadTable() liest Datensatz aus Textdatei ein, Komma als Spaltentrenner
  * Leerzeichen am Anfang und Ende eines Eintrags werden entfernt
+ 
+ table-class
+ - read from csv-file (pin-file)
+ - search-methods
+ - method to erase empty rows
+ 
+ 
  */
 
 #ifndef TABLE_H

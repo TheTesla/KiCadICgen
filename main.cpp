@@ -1,3 +1,14 @@
+
+/*
+  Name: KiCadICgen
+  Copyright: 2012 Stefan Helmert
+  Author: Stefan Helmert
+  Date: 07.12.12 18:07
+  Description: generates or modiefies KiCad-lib-file from a pin-file
+*/
+
+
+
 #include <cstdlib>
 #include <iostream>
 #include <sstream>

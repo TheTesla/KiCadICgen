@@ -1,4 +1,20 @@
 
+
+/*
+  Name: KiCadICgen - KiCad-lib-file access
+  Copyright: 2012 Stefan Helmert
+  Author: Stefan Helmert
+  Date: 07.12.12 18:07
+  Description: 
+    - generate entry for lib-file
+    - remove old entry
+    - add new entry on the right place (sorted alphabetic)
+    - check if lib-file exists
+    - initialize new lib-file
+*/
+
+
+
 #ifndef KICADLIBOP_H
 #define KICADLIBOP_H
 

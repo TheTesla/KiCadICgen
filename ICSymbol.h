@@ -1,4 +1,15 @@
 
+/*
+  Name: KiCadICgen - editing symbol
+  Copyright: 2012 Stefan Helmert
+  Author: Stefan Helmert
+  Date: 07.12.12 18:07
+  Description: 
+    - stretches symbol-rectangle
+    - places pins around the symbol
+    - grid-feature: rounds coordinates to stepsize
+*/
+
 
 #ifndef ICSYMBOL_H
 #define ICSYMBOL_H
