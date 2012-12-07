@@ -1,0 +1,52 @@
+# Project: KiCadICgen
+# Compiler: Default GCC compiler
+# Compiler Type: MingW 3
+# Makefile created by wxDev-C++ IDE 7.4.2.569 on 05.12.12 03:22
+
+WXLIBNAME = wxmsw29u
+CPP       = g++.exe
+CC        = gcc.exe
+WINDRES   = "windres.exe"
+OBJ       = Objects/MingW/main.o Objects/MingW/ICProcTable.o Objects/MingW/ICSymbol.o Objects/MingW/Table.o Objects/MingW/KiCadlibOp.o
+LINKOBJ   = "Objects/MingW/main.o" "Objects/MingW/ICProcTable.o" "Objects/MingW/ICSymbol.o" "Objects/MingW/Table.o" "Objects/MingW/KiCadlibOp.o"
+LIBS      = -L"C:/Program Files (x86)/Dev-Cpp/lib/wx/gcc_lib" -L"C:/Program Files (x86)/Dev-Cpp/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW32/lib"  -g3 
+INCS      = -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/include"
+CXXINCS   = -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/include" -I"C:/Program Files (x86)/Dev-Cpp/" -I"C:/Program Files (x86)/Dev-Cpp/include/common"
+RCINCS    = --include-dir "C:/PROGRA~2/Dev-Cpp/include/common"
+BIN       = Output/MingW/KiCadICgen.exe
+DEFINES   = 
+CXXFLAGS  = $(CXXINCS) $(DEFINES)   -g3
+CFLAGS    = $(INCS) $(DEFINES)   -g3
+GPROF     = gprof.exe
+ifeq ($(OS),Windows_NT)
+   RM = del /Q
+   FixPath = $(subst /,\,$1)
+else
+   RM = rm -f
+   FixPath = $1
+endif
+LINK      = g++.exe
+
+.PHONY: all all-before all-after clean clean-custom
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	$(RM) $(call FixPath,$(LINKOBJ)) "$(call FixPath,$(BIN))"
+
+$(BIN): $(OBJ)
+	$(LINK) $(LINKOBJ) -o "$(BIN)" $(LIBS) 
+
+Objects/MingW/main.o: $(GLOBALDEPS) main.cpp Table.h ICSymbol.h ICProcTable.h ICSymbol.h Table.h KiCadlibOp.h ICSymbol.h
+	$(CPP) -c main.cpp -o Objects/MingW/main.o $(CXXFLAGS)
+
+Objects/MingW/ICProcTable.o: $(GLOBALDEPS) ICProcTable.cpp ICProcTable.h ICSymbol.h Table.h
+	$(CPP) -c ICProcTable.cpp -o Objects/MingW/ICProcTable.o $(CXXFLAGS)
+
+Objects/MingW/ICSymbol.o: $(GLOBALDEPS) ICSymbol.cpp ICSymbol.h
+	$(CPP) -c ICSymbol.cpp -o Objects/MingW/ICSymbol.o $(CXXFLAGS)
+
+Objects/MingW/Table.o: $(GLOBALDEPS) Table.cpp Table.h
+	$(CPP) -c Table.cpp -o Objects/MingW/Table.o $(CXXFLAGS)
+
+Objects/MingW/KiCadlibOp.o: $(GLOBALDEPS) KiCadlibOp.cpp KiCadlibOp.h ICSymbol.h
+	$(CPP) -c KiCadlibOp.cpp -o Objects/MingW/KiCadlibOp.o $(CXXFLAGS)

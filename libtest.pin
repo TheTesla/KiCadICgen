@@ -1,0 +1,53 @@
+
+ ==== Properties ====
+NAME, ATXGiga1024
+REFERENCE, IC
+PACKAGE,TQFP44
+LIBRARY, libtest
+MINWIDTH, 0
+MINHEIGHT, 0
+ ---- END ----
+
+
+ ==== Pinlist ====
+NUM, NAME, TEXT, ELECTRICAL_TYPE, PIN_TYPE
+0, nul , 
+ 1,Pin1,Text1  , B
+2, Pin2, Text2, B
+3, Pin3, Text3, B
+
+4, Pin4, Text4, B
+5, Pin5, Text5, B
+6, Pin6, Text6, B
+7, Pin7, Text7, B
+8, Pin8, Text8, B
+ ---- END ----
+
+
+
+ ==== Arrangement ====
+NAME, ABSSPACE, RELSPACE
+SIDE, R
+nul, 200, 0
+Pin1, 200, 0
+Pin2, 200, 0
+Pin3, 200, 0
+Pin4, 200, 0
+
+
+
+
+SIDE, L
+nul, 200, 0
+Pin5, 0, 1
+
+SIDE, U
+nul, 200, 0
+Pin6, 0, 1
+
+
+SIDE, D
+nul, 200, 0
+Pin7, 200, 0
+Pin8, 0, 1
+ ---- END ----
