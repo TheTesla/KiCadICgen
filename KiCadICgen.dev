@@ -1,7 +1,7 @@
 [Project]
 FileName=KiCadICgen.dev
 Name=KiCadICgen
-UnitCount=7
+UnitCount=9
 PchHead=-1
 PchSource=-1
 Ver=3
@@ -157,7 +157,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit8]
-FileName=KiCadlibOp.h
+FileName=KiCadlibOp.cpp
 CompileCpp=1
 Folder=KiCadICgen
 Compile=1
@@ -167,7 +167,7 @@ OverrideBuildCmd=0
 BuildCmd=
 
 [Unit9]
-FileName=KiCadlibOp.cpp
+FileName=KiCadlibOp.h
 CompileCpp=1
 Folder=KiCadICgen
 Compile=1

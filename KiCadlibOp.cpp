@@ -42,7 +42,7 @@ void KiCadlibRemoveSym(string libFilename, string Symname)
     while(ilibFile.good()){
         getline(ilibFile, line);
         // Kommentarblock am Kopf des Eintrags entfernen
-        if(0 == line.find("# "+Symname)){
+        if((0 == line.find("# "+Symname)) && (line.length()==Symname.length()+2)){
             cout << "Removed lib-comment" << endl;
             while(ilibFile.good()){
                 getline(ilibFile, line);
@@ -52,7 +52,7 @@ void KiCadlibRemoveSym(string libFilename, string Symname)
         }
         
         // gesamten Eintrag entfernen 
-        if(0 == line.find("DEF "+Symname)){
+        if(0 == line.find("DEF "+Symname+" ")){
             cout << "Removed lib-entry" << endl;
             while(ilibFile.good()){
                 getline(ilibFile, line);
